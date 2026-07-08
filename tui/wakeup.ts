@@ -4,6 +4,8 @@ import figlet from "figlet";
 import {runCliMode} from "../modes/cli";
 // import {runWhatsappMode} from "../modes/whatsapp";
 
+//inside the file tui/wakeup.ts, we will create a function to print the banner with shadow effect and then run the wakeup function to select the mode.
+
 const BANNER_FONT = "ANSI Shadow";
 const SHADOW = chalk.hex("#5b4d9e");
 const FACE = chalk.hex("#e8dcf8").bold;
