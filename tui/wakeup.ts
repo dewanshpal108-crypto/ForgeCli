@@ -2,7 +2,7 @@ import {select , isCancel} from "@clack/prompts";
 import chalk from "chalk";
 import figlet from "figlet";
 import {runCliMode} from "../modes/cli";
-
+// import {runWhatsappMode} from "../modes/whatsapp";
 
 const BANNER_FONT = "ANSI Shadow";
 const SHADOW = chalk.hex("#5b4d9e");
