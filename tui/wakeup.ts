@@ -3,6 +3,7 @@ import chalk from "chalk";
 import figlet from "figlet";
 import {runCliMode} from "../modes/cli/cli.ts";
 // import {runWhatsappMode} from "../modes/whatsapp";
+import { runTelegramMode } from "../modes/telegram/index.ts";
 
 //inside the file tui/wakeup.ts, we will create a function to print the banner with shadow effect and then run the wakeup function to select the mode.
 
@@ -43,6 +44,7 @@ export async function runwakeup()
         options : [
             {value : "cli", label : "CLI Mode"},
             {value : "whatsapp", label : "WhatsApp Mode"},
+            {value : "telegram" , label : "Telegram Mode"},
             {value : "exit", label : "Exit"}
         ]
     })
@@ -60,5 +62,9 @@ export async function runwakeup()
     if(mode === "whatsapp")
     {
         // await runWhatsappMode();
+    }
+    if(mode === "telegram")
+    {
+        await runTelegramMode();
     }
 }

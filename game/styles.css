@@ -1,0 +1,132 @@
+/* Center the canvas on the screen and disable scrolling during gameplay */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #70c5ce;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Start Screen Styles */
+.start-screen-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.start-screen-container h1 {
+  margin: 0 0 20px 0;
+  font-size: 36px;
+  color: #ff4d4d;
+}
+
+.start-button {
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #2ECC71;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 20px 0;
+}
+
+.start-button:hover {
+  background-color: #27AE60;
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+.instructions {
+  font-size: 18px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Game Container (existing) */
+.game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-canvas {
+  background-color: #70c5ce;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* UI Overlay styles */
+.score-overlay {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.game-over-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.game-over-overlay h1 {
+  margin: 0 0 15px 0;
+  font-size: 36px;
+  color: #ff4d4d;
+}
+
+.game-over-overlay p {
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+.game-over-overlay button {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.game-over-overlay button:hover {
+  background-color: #ff6b6b;
+}
+
+.game-over-overlay button:active {
+  transform: scale(0.98);
+}
