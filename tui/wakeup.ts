@@ -1,7 +1,7 @@
 import {select , isCancel} from "@clack/prompts";
 import chalk from "chalk";
 import figlet from "figlet";
-import {runCliMode} from "../modes/cli";
+import {runCliMode} from "../modes/cli/cli.ts";
 // import {runWhatsappMode} from "../modes/whatsapp";
 
 //inside the file tui/wakeup.ts, we will create a function to print the banner with shadow effect and then run the wakeup function to select the mode.

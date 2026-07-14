@@ -1,0 +1,1 @@
+export const isOwner = (id : number) : boolean => String(id) == process.env.TELEGRAM_OWNER_ID?.trim() 

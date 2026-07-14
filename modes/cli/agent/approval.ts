@@ -3,7 +3,7 @@ import { select , isCancel} from "@clack/prompts";
 import chalk from "chalk";
 import type {ActionLog} from "./types";
 import { composeBeforeAfter , formatPatch } from "./diff-view";
-import { renderTerminalMarkdown } from "../../tui/terminal-md";
+import { renderTerminalMarkdown } from "../../../tui/terminal-md";
 
 interface ReviewGroup
 {

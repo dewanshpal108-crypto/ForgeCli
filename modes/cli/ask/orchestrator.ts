@@ -2,11 +2,11 @@ import chalk from "chalk";
 import { confirm, isCancel, text } from "@clack/prompts";
 import { ToolLoopAgent, stepCountIs, tool } from "ai";
 import { z } from "zod";
-import { getAgentModel } from "../../ai/ai.config.ts";
+import { getAgentModel } from "../../../ai/ai.config.ts";
 import { ActionTracker } from "../agent/action-tracker.ts";
 import { ToolExecutor } from "../agent/tool-executor.ts";
 import { defaultAgentConfig } from "../agent/types.ts";
-import { renderTerminalMarkdown } from "../../tui/terminal-md.ts";
+import { renderTerminalMarkdown } from "../../../tui/terminal-md.ts";
 import { runApprovalFlow } from "../agent/approval.ts";
 // import { createWebTools } from "../plan/web-tools.ts";
 

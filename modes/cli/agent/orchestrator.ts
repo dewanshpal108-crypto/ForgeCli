@@ -5,8 +5,8 @@ import { ActionTracker } from "./action-tracker";
 import { ToolExecutor } from "./tool-executor";
 import { createAgentTools } from "./agent-tools";
 import { ToolLoopAgent , stepCountIs } from "ai";
-import { getAgentModel } from "../../ai";
-import { renderTerminalMarkdown } from "../../tui/terminal-md";
+import { getAgentModel } from "../../../ai";
+import { renderTerminalMarkdown } from "../../../tui/terminal-md";
 import { runApprovalFlow } from "./approval";
 
 export async function runAgentMode()
